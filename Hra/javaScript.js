@@ -163,9 +163,9 @@ let konecO = ctx.createPattern(img4, "no-repeat");
 		if (z > 400){
 			z = 400;
 		};		
-        rychlost++;
-        if (rychlost > 30){
-          rychlost = 30;          
+        rychlost=rychlost + 5;
+        if (rychlost > 50){
+          rychlost = 50;          
         };
   };
   if(i>rectangle.x && (rectangle.y.toFixed(0)-(z+intervalY)<=intervalY)){ /* || (z+interval == rectangle.y.toFixed(0))*/
