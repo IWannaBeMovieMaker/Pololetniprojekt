@@ -37,7 +37,7 @@ function Objekt(x, y, width, height){
   this.width=width;
   this.height=height;
   ctx.beginPath();
-  ctx.fillStyle = "red";
+  ctx.fillStyle = "yellow";
   ctx.fillRect(x, y, width, height);
   ctx.fill();
 }
@@ -163,9 +163,9 @@ let konecO = ctx.createPattern(img4, "no-repeat");
 		if (z > 400){
 			z = 400;
 		};		
-        rychlost=rychlost + 5;
-        if (rychlost > 50){
-          rychlost = 50;          
+        rychlost=rychlost + 10;
+        if (rychlost > 100){
+          rychlost = 100;          
         };
   };
   if(i>rectangle.x && (rectangle.y.toFixed(0)-(z+intervalY)<=intervalY)){ /* || (z+interval == rectangle.y.toFixed(0))*/
